@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nekoscape.android.ntc.activity"
+    android:installLocation="internalOnly"
+    android:versionCode="25"
+    android:versionName="1.1" >
+
+    <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- 端末起動時にバッチを呼ぶレシーバ -->
+        <receiver android:name="com.nekoscape.android.ntc.intent.reciver.ServiceBootReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" >
+                </action>
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <!-- ネットワークの状態変更時に呼び出すレシーバ -->
+        <receiver android:name="com.nekoscape.android.ntc.intent.reciver.NetworkChangedReciver" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <!-- 日付変更時に呼び出すレシーバー -->
+        <receiver android:name="com.nekoscape.android.ntc.intent.reciver.DateChangedReciver">
+            <intent-filter >
+                <action android:name="android.intent.action.DATE_CHANGED"/>
+                
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        
+        <receiver
+            android:name="com.nekoscape.android.ntc.widget.CurrentNetwork_2x1"
+            android:label="@string/app_name_2x1" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_current_2x1" />
+        </receiver>
+
+        <!-- サンプルのサービス -->
+        <service android:name="com.nekoscape.android.ntc.service.TrafficCheckService" >
+        </service>
+        <service android:name="com.nekoscape.android.ntc.widget.CurrentNetwork$WidgetService" />
+
+        <activity
+            android:name="com.nekoscape.android.ntc.activity.MainActivity"
+            android:configChanges="orientation"
+            android:label="@string/app_name"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.nekoscape.android.ntc.activity.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:launchMode="singleTask"
+            android:parentActivityName="com.nekoscape.android.ntc.activity.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nekoscape.android.ntc.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.nekoscape.android.ntc.activity.SettingsLowerActivity"
+            android:label="@string/title_activity_settings"
+            android:launchMode="singleTask"
+            android:parentActivityName="com.nekoscape.android.ntc.activity.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nekoscape.android.ntc.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.nekoscape.android.ntc.activity.LineGraphicActivity"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_graph"
+            android:launchMode="singleTask"
+            android:parentActivityName="com.nekoscape.android.ntc.activity.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nekoscape.android.ntc.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.nekoscape.android.ntc.activity.UpgradeActivity"
+            android:label="@string/title_activity_upgrade" >
+        </activity>
+        <activity
+            android:name="com.nekoscape.android.ntc.activity.history.HistoryActivity"
+            android:label="@string/title_activity_history"
+            android:parentActivityName="com.nekoscape.android.ntc.activity.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nekoscape.android.ntc.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.nekoscape.android.ntc.activity.compare.CompareActivity"
+            android:label="@string/title_activity_compare"
+            android:parentActivityName="com.nekoscape.android.ntc.activity.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nekoscape.android.ntc.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.nekoscape.android.ntc.activity.NetworkDetailInfoActivity"
+            android:label="@string/action_detail"
+            android:parentActivityName="com.nekoscape.android.ntc.activity.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nekoscape.android.ntc.activity.MainActivity" />
+        </activity>
+        </application>
+
+</manifest>

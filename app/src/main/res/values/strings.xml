@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Cats EYE</string>
+    <string name="app_name_2x1">Cats EYE 2x1</string>
+    <string name="app_name_3x1">Cats EYE 3x1</string>
+    <string name="app_name_4x1">Cats EYE 4x1</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_graph">Graph</string>
+    <string name="action_history">History</string>
+    <string name="action_compare">Compare</string>
+    <string name="no_wifi_service">Connecting : No Wi-Fi Service</string>
+    <string name="wifi_service_prefix">Connecting : %1$s</string>
+    <string name="today">Today</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="month">This Month</string>
+    <string name="threedays">3 days</string>
+    <string name="sum">Sum</string>
+    <string name="send">Send</string>
+    <string name="recv">Recv</string>
+    <string name="title_activity_graph">Wi-Fi Total Traffic</string>
+    <string name="x_axsis">"o'clock"</string>
+    <string name="y_axsis">traffic(MB)</string>
+    <string name="day_before">the day before</string>
+    <string name="month_before">the last year</string>
+    <string name="total_traffic">the day</string>
+    <string name="mobile_traffic">mobile</string>
+    <string name="month_x_axis">date</string>
+    <string name="year_x_axis">month</string>
+    <string name="dialog_upgrade_0_9_5">Change Data Structure</string>
+    <string name="dialog_upgrade_0_9_5_message">Now processing</string>
+    <string name="action_google_play">To Google Play</string>
+    <string name="current_network">current network</string>
+    <string name="history_title">Traffic History</string>
+    <string name="compare_title">Compare Netwrok ID</string>
+    <string name="tab_day">DAY</string>
+    <string name="tab_month">MONTH</string>
+    <string name="tab_year">YEAR</string>
+    <string name="date">DATE</string>
+    <string name="time">TIME</string>
+    <string name="total_pattern">Total(MBytes)</string>
+    <string name="history_unit">Total ( send / recv ) [MBytes]</string>
+
+        
+    <!-- ネットワーク詳細画面 -->
+    <string name="action_detail">Network details</string>
+    <string name="network_connect_state">STATE</string>
+    <string name="network_connect_extra">EXTRA INFO</string>
+    <string name="network_connect_type">TYPE</string>
+    <string name="network_connect_roming">ROAMING</string>
+    <string name="network_connect_subtype">SUBTYPE</string>
+     <string name="network_wifi_stels">STERUSS MODE</string>
+     <string name="network_wifi_power_level">SIGNAL STRENGTH</string>
+     <string name="network_wifi_linkspeed">LINK SPEED</string>    
+     <string name="network_wifi_dns1">PREFERRED DNS</string>
+     <string name="network_wifi_dns2">ALTERNATE DNS</string>
+     <string name="network_wifi_gateway">GATEWAY</string>
+     <string name="network_wifi_netmask">SUBNETMASK</string>
+     <string name="network_wifi_ipaddress">IP ADDRESS</string>
+     <string name="network_device_macaddress">MAC ADDRESS</string>
+     <string name="network_wifi_ssid">SSID</string>
+    
+
+    <string-array name="graph_view_spinner">
+        <item>Today</item>
+        <item>Yesterday</item>
+        <item>This Month</item>
+        <item>This Year</item>
+    </string-array>
+
+    <string name="title_activity_upgrade">Upgrade Supporter</string>
+    <string name="title_activity_details">DetailsActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_history">HistoryActivity</string>
+    <string name="title_activity_compare">CompareActivity</string>
+
+</resources>

@@ -1,0 +1,53 @@
+<resources>
+
+    <string name="title_activity_settings">Setting</string>
+
+    <!-- Strings related to Settings -->
+
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+    <string name="pref_title_social_recommendations">Display to the Notification</string>
+    <string name="pref_description_social_recommendations">If you displayed to the Notifiattion. you checked it.</string>
+    <string name="pref_tilte_waiting_time">Traffic Measurement accurate</string>
+    <string name="pref_description_waiting_time">If you required accurate measurement, you would be setting higher accurate. but consum battery.</string>
+    <string name="pref_dialogtitle_waiting_time">accurate measurment</string>
+    <string name="pref_google_analystic_summmary">For service quality improvement, You will send to the analysis of the Google Analystics usage. Personally identifiable information to information to be sent are not included.</string>
+    <string name="pref_google_analystic_title">Application Tracking</string>
+    <string name="pref_category_base">Basic Setting</string>
+    <string name="pref_category_system">System Setting</string>
+    <string name="pref_category_widget">Widget Setting</string>
+    <string name="pref_title_widget_background">Background color</string>
+    <string name="pref_title_widget_text">Text color</string>
+    <string name="pref_title_widget_alpha">Transmittance</string>
+    <string name="pref_summary_widget_background">Setting the background color of widget.</string>
+    <string name="pref_summary_widget_text">Setting the text color of widget.</string>
+    <string name="pref_summary_widget_alpha">Setting the transmittance of widget.</string>
+
+    <!-- しきい値設定 -->
+    <string name="traffic_threshold_title">Traffic thresholds value</string>
+    <string name="traffic_threshold_switch_title">Notify to exceed threshold</string>
+    <string name="traffic_threshold_traget_title">Target Network ID</string>
+    <string name="traffic_threshold_size_title">Traffic threshold value</string>
+    <string name="traffic_threshold_size_dialog_title">Traffic [MBytes]</string>
+    <string name="traffic_threshold_size_summary">Specifyed traffic threshold value in a day. It notify If traffic size is higher than 90%.</string>
+    <string name="traffic_threshold">Reach the traffic threshold</string>
+    <string name="traffic_vibration_title">Vibration</string>
+    <string name="traffic_vibration_summary">If you were notified vibration. you checked it.</string>
+
+    <string-array name="pref_waiting_time_values">
+        <item>1</item>
+        <item>5</item>
+        <item>30</item>
+        <item>120</item>
+        <item>600</item>
+    </string-array>
+    <string-array name="pref_waiting_time_entries">
+        <item>Highest</item>
+        <item>Higher</item>
+        <item>Normal</item>
+        <item>Lower</item>
+        <item>Lowest</item>
+    </string-array>
+
+</resources>

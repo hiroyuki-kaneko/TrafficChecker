@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Nekoの監視</string>
+    <string name="app_name_2x1">ねこの監視 2x1</string>
+    <string name="app_name_3x1">ねこの監視 3x1</string>
+    <string name="app_name_4x1">ねこの監視 4x1</string>
+    <string name="action_settings">設定</string>
+    <string name="action_graph">グラフ</string>
+    <string name="action_history">履歴</string>
+    <string name="action_compare">比較</string>
+    <string name="no_wifi_service">接続中の通信：No Wi-Fi Service</string>
+    <string name="wifi_service_prefix">接続中の通信：%1$s</string>
+    <string name="today">今日</string>
+    <string name="yesterday">昨日</string>
+    <string name="month">今月</string>
+    <string name="threedays">３日間</string>
+    <string name="sum">合計</string>
+    <string name="send">送信</string>
+    <string name="recv">受信</string>
+    <string name="title_activity_graph">Wi-Fi 合計通信量</string>
+    <string name="x_axsis">時間</string>
+    <string name="y_axsis">通信量(MB)</string>
+    <string name="day_before">前日の通信量</string>
+    <string name="month_before">去年の通信量</string>
+    <string name="total_traffic">当日の通信量</string>
+    <string name="mobile_traffic">モバイルデータ</string>
+    <string name="month_x_axis">日付</string>
+    <string name="year_x_axis">月</string>
+    <string name="dialog_upgrade_0_9_5">データ構造変更</string>
+    <string name="dialog_upgrade_0_9_5_message">データ移行中</string>
+    <string name="action_google_play">Google Playへ</string>
+    <string name="current_network">接続中の通信</string>
+    <string name="history_title">通信量　履歴</string>
+    <string name="compare_title">通信量　比較</string>
+    <string name="tab_day">日</string>
+    <string name="tab_month">月</string>
+    <string name="tab_year">年</string>
+    <string name="date">日付</string>
+    <string name="time">時刻</string>
+    <string name="total_pattern">合計(MBytes)</string>
+    <string name="history_unit">合計 ( 送信 / 受信 ) [MBytes]</string>
+    
+    <!-- ネットワーク詳細画面 -->
+    <string name="action_detail">ネットワーク詳細</string>
+    <string name="network_connect_state">状態</string>
+    <string name="network_connect_extra">追加情報</string>
+    <string name="network_connect_type">通信種別</string>
+    <string name="network_connect_roming">ローミング</string>
+    <string name="network_connect_subtype">通信種別詳細</string>
+     <string name="network_wifi_stels">ステルスモード</string>
+     <string name="network_wifi_power_level">電波強度</string>
+     <string name="network_wifi_linkspeed">リンク速度</string>    
+     <string name="network_wifi_dns1">優先DNS</string>
+     <string name="network_wifi_dns2">代替DNS</string>
+     <string name="network_wifi_gateway">GATEWAY</string>
+     <string name="network_wifi_netmask">サブネットマスク</string>
+     <string name="network_wifi_ipaddress">IPアドレス</string>
+     <string name="network_device_macaddress">MACアドレス</string>
+     <string name="network_wifi_ssid">SSID名</string>
+
+     <string-array name="graph_view_spinner">
+        <item>今日</item>
+        <item>昨日</item>
+        <item>今月</item>
+        <item>今年</item>
+    </string-array>
+
+</resources>

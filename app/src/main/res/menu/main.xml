@@ -1,0 +1,38 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:support="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/action_graph"
+        android:icon="@android:drawable/ic_menu_gallery"
+        android:orderInCategory="80"
+        android:title="@string/action_graph"
+        support:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_history"
+        android:orderInCategory="100"
+        android:title="@string/action_history"
+        support:showAsAction="never"/>
+    <item
+        android:id="@+id/action_compare"
+        android:orderInCategory="100"
+        android:title="@string/action_compare"
+        support:showAsAction="never"/>
+    <item 
+        android:id="@+id/action_networkinfo"
+        android:orderInCategory="100"
+        android:title="@string/action_detail"
+        support:showAsAction="never"/>
+    
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        support:showAsAction="never"/>
+    <item
+        android:id="@+id/action_google_play"
+        android:orderInCategory="100"
+        android:title="@string/action_google_play"
+        support:showAsAction="never"/>
+
+</menu>

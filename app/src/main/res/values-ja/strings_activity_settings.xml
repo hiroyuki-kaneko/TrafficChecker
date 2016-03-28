@@ -1,0 +1,46 @@
+<resources>
+
+    <string name="title_activity_settings">設定</string>
+
+    <!-- Strings related to Settings -->
+
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+    <string name="pref_title_social_recommendations">通知バー・通知領域への表示</string>
+    <string name="pref_description_social_recommendations">通知バー・通知領域へ表示する場合は、チェックを入れてください。</string>
+    <string name="pref_tilte_waiting_time">通信量の計測精度</string>
+    <string name="pref_description_waiting_time">通信量計測の精度に影響します。精度を高くするとバッテリーが減りやすくなります。</string>
+    <string name="pref_dialogtitle_waiting_time">測定精度</string>
+    <string name="pref_google_analystic_summmary">サービス品質向上のため、利用状況をGoogleの解析用サイトへ送信します。送付する情報に個人を特定する情報は含まれません。</string>
+    <string name="pref_google_analystic_title">利用状況の情報採取</string>
+    <string name="pref_category_base">基本設定</string>
+    <string name="pref_category_system">システム設定</string>
+    <string name="pref_category_widget">ウィジェットの設定</string>
+    <string name="pref_title_widget_background">背景色</string>
+    <string name="pref_summary_widget_background">ウィジェットの背景色の色を設定します。</string>
+    <string name="pref_title_widget_text">文字色</string>
+    <string name="pref_summary_widget_text">ウィジェットに表示する文字列の色を設定します。</string>
+    <string name="pref_title_widget_alpha">透過率</string>
+    <string name="pref_summary_widget_alpha">ウィジェットの背景の透過率を設定します。</string>
+
+    <!-- しきい値設定 -->
+    <string name="traffic_threshold_title">通信量のしきい値設定</string>
+    <string name="traffic_threshold_switch_title">しきい値超え通知</string>
+    <string name="traffic_threshold_traget_title">通知対象のネットワークID</string>
+    <string name="traffic_threshold_size_title">通信量の検出量</string>
+    <string name="traffic_threshold_size_dialog_title">通信量 [MBytes]</string>
+    <string name="traffic_threshold_size_summary">1日の通信量のしきい値を指定。しきい値の90%を超えた場合に通知します。</string>
+    <string name="traffic_threshold">しきい値まで残りわずか</string>
+    <string name="traffic_vibration_title">バイブレーション</string>
+    <string name="traffic_vibration_summary">振動による通知を行う場合はチェックボックスをオンにしてください。</string>
+
+    <string-array name="pref_waiting_time_entries">
+        <item>最高</item>
+        <item>高い</item>
+        <item>普通</item>
+        <item>低い</item>
+        <item>最低</item>
+    </string-array>
+
+</resources>

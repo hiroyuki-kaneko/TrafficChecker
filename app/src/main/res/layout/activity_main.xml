@@ -1,0 +1,246 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+<!-- 
+    <Spinner
+        android:id="@+id/network_id_list_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+ -->
+    <TextView
+        android:id="@+id/ssidname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tableLayout1"
+        android:layout_alignParentTop="true"
+        android:text="No Service"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ssidname"
+        android:layout_centerHorizontal="true"
+        android:stretchColumns="3" >
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/today"
+                android:layout_column="1"
+                android:padding="3dip"
+                android:text="@string/today" />
+
+            <TextView
+                android:id="@+id/today_sum_str"
+                android:gravity="center"
+                android:padding="3dip"
+                android:text="@string/sum" />
+
+            <TextView
+                android:id="@+id/today_sum"
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="0.00" />
+
+            <TextView
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="MByte" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/today_send_str"
+                android:layout_column="2"
+                android:gravity="center"
+                android:padding="3dip"
+                android:text="@string/send" />
+
+            <TextView
+                android:id="@+id/today_send"
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="0.00" />
+
+            <TextView
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="MByte" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/today_recv_str"
+                android:layout_column="2"
+                android:gravity="center"
+                android:padding="3dip"
+                android:text="@string/recv" />
+
+            <TextView
+                android:id="@+id/today_recv"
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="0.00" />
+
+            <TextView
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="MByte" />
+        </TableRow>
+
+        <View
+            android:layout_height="2dip"
+            android:background="#FF909090" />
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/yesterday"
+                android:layout_column="1"
+                android:padding="3dip"
+                android:text="@string/threedays" />
+
+            <TextView
+                android:id="@+id/yesterday_sum_str"
+                android:gravity="center"
+                android:padding="3dip"
+                android:text="@string/sum" />
+
+            <TextView
+                android:id="@+id/yesterday_sum"
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="0.00" />
+
+            <TextView
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="MByte" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/yesterday_send_str"
+                android:layout_column="2"
+                android:gravity="center"
+                android:padding="3dip"
+                android:text="@string/send" />
+
+            <TextView
+                android:id="@+id/yesterday_send"
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="0.00" />
+
+            <TextView
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="MByte" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/yesterday_recv_str"
+                android:layout_column="2"
+                android:gravity="center"
+                android:padding="3dip"
+                android:text="@string/recv" />
+
+            <TextView
+                android:id="@+id/yesterday_recv"
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="0.00" />
+
+            <TextView
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="MByte" />
+        </TableRow>
+
+        <View
+            android:layout_height="2dip"
+            android:background="#FF909090" />
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/month"
+                android:layout_column="1"
+                android:padding="3dip"
+                android:text="@string/month" />
+
+            <TextView
+                android:id="@+id/month_sum_str"
+                android:gravity="center"
+                android:padding="3dip"
+                android:text="@string/sum" />
+
+            <TextView
+                android:id="@+id/month_sum"
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="0.00" />
+
+            <TextView
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="MByte" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/month_send_str"
+                android:layout_column="2"
+                android:gravity="center"
+                android:padding="3dip"
+                android:text="@string/send" />
+
+            <TextView
+                android:id="@+id/month_send"
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="0.00" />
+
+            <TextView
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="MByte" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/month_recv_str"
+                android:layout_column="2"
+                android:gravity="center"
+                android:padding="3dip"
+                android:text="@string/recv" />
+
+            <TextView
+                android:id="@+id/month_recv"
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="0.00" />
+
+            <TextView
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="MByte" />
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
+    android:layout_below="@+id/relativeLayout1"
+    android:layout_centerHorizontal="true" >
+
+    <TableLayout
+        android:id="@+id/history_tablelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dip" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:padding="3dip" >
+
+            <TextView
+                android:id="@+id/history_row_date"
+                android:layout_width="match_parent"
+                android:layout_column="1"
+                android:padding="3dip"
+                android:text="@string/date" />
+
+            <TextView
+                android:id="@+id/history_row_total"
+                android:layout_width="match_parent"
+                android:layout_marginRight="0dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="@string/history_unit" />
+        </TableRow>
+    </TableLayout>
+
+</ScrollView>

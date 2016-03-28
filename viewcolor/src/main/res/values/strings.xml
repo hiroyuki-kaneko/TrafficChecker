@@ -1,0 +1,7 @@
+<resources>
+
+    <string name="app_name">ViewColor</string>
+	<string name="pref_red">RED</string>
+	<string name="pref_green">GREEN</string>
+	<string name="pref_blue">BLUE</string>
+</resources>

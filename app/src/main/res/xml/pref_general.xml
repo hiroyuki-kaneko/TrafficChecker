@@ -1,0 +1,73 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:nekoscape="http://schemas.android.com/apk/lib/com.nekoscape.android.lib.view" >
+
+    <PreferenceCategory android:title="@string/pref_category_base" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="example_checkbox"
+            android:summary="@string/pref_description_social_recommendations"
+            android:title="@string/pref_title_social_recommendations" />
+
+        <ListPreference
+            android:defaultValue="30"
+            android:dialogTitle="@string/pref_dialogtitle_waiting_time"
+            android:entries="@array/pref_waiting_time_entries"
+            android:entryValues="@array/pref_waiting_time_values"
+            android:key="waiting_time"
+            android:summary="@string/pref_description_waiting_time"
+            android:title="@string/pref_tilte_waiting_time" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/traffic_threshold_title" >
+        <CheckBoxPreference
+            android:key="traffic_alarm_switch"
+            android:title="@string/traffic_threshold_switch_title" />
+        <CheckBoxPreference 
+            android:key="traffic_vibration"
+            android:defaultValue="true"
+            android:title="@string/traffic_vibration_title"
+            android:summary="@string/traffic_vibration_summary"/>
+        <ListPreference android:key="alarm_ssid_type"
+            android:title="@string/traffic_threshold_traget_title"/>
+
+        <EditTextPreference
+            android:dialogTitle="@string/traffic_threshold_size_dialog_title"
+            android:inputType="number"
+            android:key="traffic_alarm_size"
+            android:summary="@string/traffic_threshold_size_summary"
+            android:title="@string/traffic_threshold_size_title" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_category_widget" >
+        <com.nekoscape.android.lib.view.alpha.AlphaDialogPreference
+            android:defaultValue="255"
+            android:enabled="true"
+            android:key="widget_alpha"
+            android:selectable="true"
+            android:summary="@string/pref_summary_widget_alpha"
+            android:title="@string/pref_title_widget_alpha" />
+
+        <com.nekoscape.android.lib.view.color.RgbDialogPreference
+            android:defaultValue="#000000"
+            android:enabled="true"
+            android:key="widget_background_color"
+            android:selectable="true"
+            android:summary="@string/pref_summary_widget_background"
+            android:title="@string/pref_title_widget_background" >
+        </com.nekoscape.android.lib.view.color.RgbDialogPreference>
+        <com.nekoscape.android.lib.view.color.RgbDialogPreference
+            android:defaultValue="#FFFFFF"
+            android:enabled="true"
+            android:key="widget_text_color"
+            android:selectable="true"
+            android:summary="@string/pref_summary_widget_text"
+            android:title="@string/pref_title_widget_text" >
+        </com.nekoscape.android.lib.view.color.RgbDialogPreference>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_category_system" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="google_analystic"
+            android:summary="@string/pref_google_analystic_summmary"
+            android:title="@string/pref_google_analystic_title" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

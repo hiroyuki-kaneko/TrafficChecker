@@ -1,0 +1,18 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView2"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
+    android:layout_below="@+id/relativeLayout1"
+    android:layout_centerHorizontal="true" >
+
+    <TableLayout
+        android:id="@+id/network_tablelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+    </TableLayout>
+
+</ScrollView>
