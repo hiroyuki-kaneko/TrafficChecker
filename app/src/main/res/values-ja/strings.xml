@@ -66,4 +66,10 @@
         <item>今年</item>
     </string-array>
 
+    <string name="title_activity_upgrade">Upgrade Supporter</string>
+    <string name="title_activity_details">DetailsActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_history">HistoryActivity</string>
+    <string name="title_activity_compare">CompareActivity</string>
+
 </resources>

@@ -42,5 +42,12 @@
         <item>低い</item>
         <item>最低</item>
     </string-array>
+    <string-array name="pref_waiting_time_values">
+        <item>1</item>
+        <item>5</item>
+        <item>30</item>
+        <item>120</item>
+        <item>600</item>
+    </string-array>
 
 </resources>
