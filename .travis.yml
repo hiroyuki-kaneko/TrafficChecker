@@ -1,1 +1,5 @@
 language: android
+
+notifications:
+notifications:
+  slack: nekoscape:Wef02vERXszHnTc2SBKyT5HM
